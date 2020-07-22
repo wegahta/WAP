@@ -1,13 +1,9 @@
-h1>span, h2>span{
-	color: #A4A400;
-	background-color: #F0F0F0;
-	text-decoration:underline;
-	font-family: 'Lucida Sans Unicode';
-	letter-spacing:0.25em;
-}
+
+
 h1{
 	
 	font-size:22pt;
+	text-decoration: underline;
 }
 .yellowcolor{
 	background-color: yellow;
@@ -17,9 +13,12 @@ h1{
 }
 h2{
 	font-size:18pt;
+	text-decoration: underline;
+	
 }
 h1{
 	background-color: wheat;
+	text-decoration: undline;
 }
 body {
 	background-image: url("recipeImages/background.gif");
