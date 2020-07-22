@@ -1,0 +1,57 @@
+h1>span, h2>span{
+	color: #A4A400;
+	background-color: #F0F0F0;
+	text-decoration:underline;
+	font-family: 'Lucida Sans Unicode';
+	letter-spacing:0.25em;
+}
+h1{
+	
+	font-size:22pt;
+}
+.yellowcolor{
+	background-color: yellow;
+	margin-left: 5em;
+	margin-right: 30em;
+
+}
+h2{
+	font-size:18pt;
+}
+h1{
+	background-color: wheat;
+}
+body {
+	background-image: url("recipeimages/background2.gif");
+	color:#404040;
+	font-size:11pt;
+	font-family:georgian;
+	margin-left: 5em;
+	margin-right: 50;
+}
+.linkclass{
+text-decoration-color: yellow ;
+
+}
+
+pre{
+	font-family:monospace;
+}
+a:visited{
+	color:#A4A400;
+}
+.comment{
+	background-color: #FFFFA8; 
+	margin-left:3em;
+	margin-right:3em;
+	font-style:italic;
+}
+.links{
+	color: #A4A400;
+}
+.bold{
+	font-weight:bold;
+}
+#line{
+	text-decoration:line-through;
+}
