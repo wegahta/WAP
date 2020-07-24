@@ -1,4 +1,5 @@
-header { grid-area: header; }
+
+.header { grid-area: header; }
 .navbar { grid-area: menu; }
 .row { grid-area: column; }
 .footer { grid-area: foot; }
@@ -21,7 +22,7 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background-color: dodgerblue;
+  background: #23d5f5;
   color: black;
 }
 
@@ -82,13 +83,6 @@ body {
   text-align: center;
   background: rgb(78, 92, 92);
 }
-.footer div{
-    text-align: left;
-    margin-left: 5px;
-    bottom: 1px;
-}
-
-
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -96,5 +90,3 @@ body {
     flex-direction: column;
   }
 }
-
- 
