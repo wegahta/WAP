@@ -125,9 +125,18 @@ function myFunctionTest(expected, found) {
       return "TEST FAILED.  Expected " + expected + " found " + found;
     }
   }
-  console.assert((myFunctionTest(10, max(20, 10)))!="TEST SUCCEEDED",'Failed assert test');
+  console.assert((myFunctionTest(20, max(20, 10)))=="TEST SUCCEEDED",'Failed assert test');
+  console.assert((myFunctionTest(20, maxOfThree(20, 10,5)))=="TEST SUCCEEDED",'Failed assert test');
+  console.assert((myFunctionTest(false, isVowel(a,)))=="TEST SUCCEEDED",'Failed assert test');
+  console.assert((myFunctionTest(20, sum([3,5,6,4,2])))=="TEST SUCCEEDED",'Failed assert test');
+  console.assert((myFunctionTest(10080, multiply([20,9,7,8])))=="TEST SUCCEEDED",'Failed assert test');
+  
+
+
+  
+
   console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10)));
-  console.log("Expected output of max(20,10,5) is 20  " + myFunctionTest(20, maxOfThree(20, 10, 5)));
+  console.log("Expected output of maxOfThree(20,10,5) is 20  " + myFunctionTest(20, maxOfThree(20, 10, 5)));
   console.log("the expected a " + myFunctionTest(true, isVowel(a)));
   console.log("Expected output of sum([3,5,6,4,2]) is 10  " + myFunctionTest(20,sum([3,5,6,4,2])));
   console.log("Expected output of multiply([20,9,7,8]) is 10080  " + myFunctionTest(10080,multiply([20,9,7,8])));
