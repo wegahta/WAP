@@ -142,8 +142,8 @@ function myFunctionTest(expected, found) {
   console.log("Expected output of multiply([20,9,7,8]) is 10080  " + myFunctionTest(10080,multiply([20,9,7,8])));
   console.log("Expected output of reverse('Maharshi Universty') is ytsrevinU ihsrahaM  " + myFunctionTest('ytsrevinU ihsrahaM ',reverse('Maharshi Universty')));
   console.log("Expected output of findLongestWord(['wegihu','Eleni','Elu','a']) is wegihu  " + myFunctionTest('wegihu',findLongestWord(['wegihu','Eleni','Elu'])));
-  console.log("Expected output of filterLongWords(['class','javascript','python','php'],5) is 'javascript'" 
-  + myFunctionTest('javascript',filterLongWords(['class','javascript','python','php'],5)));
+  console.log("Expected output of filterLongWords(['class','javascript','python','php'],6) is 'javascript'" 
+  + myFunctionTest('javascript',filterLongWords(['class','javascript','python','php'],7)));
   
   
 
