@@ -1,3 +1,6 @@
+
+
+
 describe("Account Test", function(){
     let acc=new Account(1);
     
@@ -55,3 +58,60 @@ describe("Saving Account Test", function(){
 
 
 
+
+
+
+
+describe("Checking Account Test", function(){
+
+    let checking=new CheckingAccount(3);
+
+    it("Testing getOverdraft of CheckingAccount", function(){
+        
+        assert.equal(500, checking.getOverdraft());
+    });
+
+    it("Testing setOverdraft of CheckingAccount", function(){
+        checking.setOverdraft(750);
+        checking.withdraw(500); 
+        assert.equal(250, checking.getOverdraft());
+    });
+
+    it("Testing endOfMonth of CheckingAccount", function(){
+               
+        assert.equal("Warning, low balance CheckingAccount: "+ checking.getNumber() +"balance: "+ checking.getBalance()+" overdraft limit:"+checking._overdraft, checking.endOfMonth());
+    });
+
+})
+
+
+
+
+
+
+
+
+describe("Bank  Test", function(){
+    
+    let bank=new Bank();
+
+    it("Testing addAccount of Bank", function(){
+               
+        assert.equal(1, bank.addAccount());
+    });
+
+    it("Testing addSavingsAccount of Bank", function(){
+               
+        assert.equal(2, bank.addSavingsAccount(6));
+    });
+
+    it("Testing addCheckingAccount of Bank", function(){
+               
+        assert.equal(3, bank.addCheckingAccount(650));
+    });
+    
+    it("Testing closeAccount of Bank", function(){
+               
+        assert.equal(2, bank.closeAccount(2));
+    });
+})
