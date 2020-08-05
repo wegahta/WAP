@@ -17,7 +17,7 @@ $(function(){
 
         $('.circle').show().css({"height":width,"width":width,"top":"200px","left":"50%"});
 
-        let count=parseInt($('#number').val());
+        let count=parseInt(num);
 
         for(let i=0;i<count;i++){
             var $newCircle = $('<div />').appendTo('body');
@@ -43,6 +43,7 @@ $(function(){
         let growAmt=parseInt($('#growAmt').val());
 
         let circle=$('.circle');
+
 
 
 
