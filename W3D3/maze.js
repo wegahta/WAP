@@ -44,7 +44,8 @@ function endPoint(evt){
 
 
 function resetPoint(evt){
-    $("#maze .boundary").css('background-color','#eeeeee');
-    location.reload();
+    //$("#maze .boundary").css('background-color','green');
+   location.reload();
 }
 
+e
